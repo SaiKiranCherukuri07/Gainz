@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Contact Gainz" />
+    <meta name="keywords" content="Gainz , Gainz Contact, Contact Gainz" />
+    <meta name="author" content="Sai Kiran Cherukuri & Rakesh" />
+    <meta name="http-equiv" refresh="30" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="contact.css" />
+    <link rel="stylesheet" type="text/css" href="home.css" />
+    <script
+      src="https://kit.fontawesome.com/b9977b8056.js"
+      crossorigin="anonymous"
+    ></script>
+    
+    <title>Contact</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <script id="replace_with_navbar" src="navbar.js"></script>
+      <div class="container-card">
+        <h2>Interested? Join us now.</h2>
+        <form  class="container-form" id="contactForm" method="post" >
+
+            <div class="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="fullname" placeholder="Enter your name" required autofocus />
+            </div>
+
+            <div class="form">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" size="2" required autofocus />
+            </div>
+
+            <div class="form">
+                <label for="weight">Weight:</label>
+                <input type="number" id="weight" name="weight" placeholder="Enter your weight"  required autofocus />
+            </div>
+
+            <div class="form">
+                <label for="gender" >Gender:</label>
+                <select id="gender" name="gender" autofocus>
+                    <option value="Select your gender" disabled selected>Select your gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                </select>
+            </div>
+
+            <div class="form">
+                <label for="mobileNo">Mobile:</label>
+                <input type="number" id="mobileNo" class="mobileNo" name="mobileNo" placeholder="Enter your mobile number" required autofocus/>
+            </div>
+
+            <div class="form">
+                <label for="focus">Focus on:</label>
+                <select id="focus" name="focus" autofocus>
+                    <option value="Select your resolution" disabled selected>Select your resolution</option>
+                    <option value="TRX Training">TRX Training</option>
+                    <option value="Cross Fit">Cross Fit</option>
+                    <option value="Strength">Strength</option>
+                    <option value="cardio">Cardio</option>
+                    <option value="Endurance">Endurance</option>
+                    <option value="Fitness">Fitness</option>
+                </select>
+                </datalist>
+            </div>
+            
+              <button id="submitBtn" type="submit">Submit</button>
+  
+        </form>
+
+        </div>
+
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7617.438586151895!2d78.54491507770999!3d17.329087800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba372f565f5c7%3A0x208fcc366c29686a!2sGainz%20Gym!5e0!3m2!1sen!2sin!4v1708257496308!5m2!1sen!2sin"
+          width="100%"
+          height="400vh"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+      <script id="replace_with_footer" src="footer.js"></script>
+  </body>
+      <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
+      <!--<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>-->
+      <script src="contact.js"></script>
+</html>

@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px; 
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    background-color:antiquewhite;
+    width: 100vw;
+}
+
+
+.container-card{
+    width:50vw;
+    background-color: antiquewhite;
+    margin: 1vw auto;
+    padding: 2vw;
+    border-radius: 2vw;
+    overflow-x:auto;
+}
+
+
+div label{
+    width: 15vw;
+    padding: 1.5vw;
+    display:inline-block;
+}
+
+div input{
+    min-width:25vw ;
+    padding: 0.6vw;
+    border:none;
+    border-radius: 1vw ;
+    border-bottom: 0.2vw solid red;
+    text-overflow: ellipsis;
+    
+}
+
+div.form select{
+    min-width: 25vw;
+    padding: 0.6vw;
+    border: none;
+    border-radius: 1vw;
+    border-bottom: 0.2vw solid red;
+    text-overflow: ellipsis;
+}
+
+div iframe{
+    width: 100vw;
+    max-width: 100%;
+}
+
+button{
+    background-color: #04AA6D;
+    color: white;
+    padding: 1vw 1.5vw;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 2vw;
+    
+}
+
+button:hover{
+    opacity: 0.8;
+  }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+}
+
+select{
+    appearance: none;
+    -webkit-appearance: none;
+    color: grey;
+}
+
+@media screen and (max-width:600px){
+
+    .container-card{
+        width: 100vw;
+    }
+    div label{
+       width:30vw;
+       margin-left: 3vw;
+    }
+
+    div input{
+        width: 50vw;
+    }
+    div.form select{
+        width: 50vw;
+    }
+    
+}
+

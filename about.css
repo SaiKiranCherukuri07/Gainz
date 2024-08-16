@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.container-about{
+    width: 100%;
+}
+
+.profile{
+    display: flex;
+}
+
+.profile-card{
+    width: 50vw;
+    text-align:center;
+    background-color: rgb(21, 29, 21);
+    color: red;
+    line-height: 25px;
+    padding: 2vw;
+    letter-spacing: 1px;
+}
+
+.profile-card img{
+    width: 20vw;
+    border-radius: 20vw;
+    display: block;
+    margin: 0 auto;
+    padding: 1vw;
+}
+
+.container-why ,.training-structure{
+    text-align: center;
+    padding-top: 15px;
+    color: red;
+}
+.container-choose{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: stretch;
+    align-items:center;
+    margin-top: 15px;
+    font-size: 20px;
+
+}
+
+.choose1,.choose2,.choose3{
+    color:black;
+    align-self:stretch;
+    padding: 15px;
+    background-color: gray;
+    border-radius: 10px;
+    margin: 10px;
+    flex:1 2 300px;
+    font-size: 20px;
+}
+
+
+.choose1 p, .choose2 p,.choose3 p{
+    text-align: left;
+    padding-top: 10px;
+    color:white;
+    font-size: 20px;
+}
+
+.service-structure{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-items:center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.training,.timings{
+    width: 50vw;
+    color:black;
+    align-self:stretch;
+    padding: 15px;
+    background-color: gray;
+    border-radius: 10px;
+    margin: 10px;
+    flex:1 2 300px;
+    font-size: 20px;
+}
+
+.training p,.timings p{
+    text-align: center;
+    padding-top: 10px;
+    color:white;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width:600px){
+
+    .profile{
+        flex-direction: column;
+    }
+    .profile-card{
+        width: 100vw;
+    }
+
+}
+
